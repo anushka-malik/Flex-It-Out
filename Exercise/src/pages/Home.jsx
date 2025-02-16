@@ -1,20 +1,34 @@
-import React from 'react'
-import Header from '../Components/Files/Header/Header'
-import SpecialityMenu from '../Components/SpecialityMenu'
-import Banner from '../Components/Banner'
-import Footer from '../Components/Files/Footer/Footer'
-import TopTutors from '../Components/Files/TopTutor/TopTutors'
+
+// import React from 'react'
+// import LandingPage from '../Components/Files/LandingPage'
+// import HomeDashboard from '../Components/Files/HomeDashboard'
+
+// const Home = () => {
+//   return (
+//     <div>
+//       <LandingPage/>
+//       <HomeDashboard/>
+//     </div>
+//   )
+// }
+
+// export default Home
+
+
+import React from 'react';
+import LandingPage from '../Components/Files/LandingPage';
+import HomeDashboard from '../Components/Files/HomeDashboard';
+import AuthForm  from '../Components/Files/AuthForm';
 
 const Home = () => {
   return (
     <div>
-      <Header/>
-      <TopTutors/>
-      <SpecialityMenu/>
-      <Banner/>
-      <Footer/>
+      <LandingPage />
+      <HomeDashboard />
+       <AuthForm/>
+     
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
