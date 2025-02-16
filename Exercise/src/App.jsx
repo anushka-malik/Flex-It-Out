@@ -440,6 +440,8 @@ import classIcon4 from './assets/class-icon-4.png';
 import blog1 from './assets/blog-1.jpg';
 import blog2 from './assets/blog-2.jpg';
 import blog3 from './assets/blog-3.jpg';
+import FitnessLanding from './Components/Files/FitnessLanding';
+import Home from './pages/Home';
 
 
 
@@ -801,6 +803,8 @@ const App = () => {
           } 
         />
         <Route path="/signup" element={<AuthForm />} />
+        <Route path="/home" element={<Home />} />
+
       </Routes>
 
       <a href="#top" className="back-top-btn" aria-label="back to top" data-back-top-btn>

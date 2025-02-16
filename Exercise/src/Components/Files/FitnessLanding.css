@@ -1,0 +1,610 @@
+/* .landing-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+  }
+  
+  .background-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: url('C:\Users\am881\OneDrive\Documents\ProjectCopy\YogaMaster-\Exercise\src\assets\LandingPage.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+  }
+  
+  .content-container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    padding: 0 1rem;
+  }
+  
+  .tagline {
+    color: #f97316; 
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .main-heading,
+  .sub-heading {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .main-heading,
+    .sub-heading {
+      font-size: 5rem;
+    }
+  }
+  
+  .description {
+    font-size: 1.25rem;
+    text-align: center;
+    max-width: 42rem;
+    margin-bottom: 3rem;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .button-container {
+      flex-direction: row;
+    }
+  }
+  
+  .start-button {
+    background-color: #ea580c; 
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+  
+  .start-button:hover {
+    background-color: #c2410c; 
+  }
+  
+  .demo-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid white;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+  
+  .demo-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .start-button,
+  .demo-button {
+    transform: scale(1);
+    transition: transform 0.2s;
+  }
+  
+  .start-button:hover,
+  .demo-button:hover {
+    transform: scale(1.05);
+  } */
+
+
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+.landing-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+.background-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: url('C:\Users\am881\OneDrive\Documents\ProjectCopy\YogaMaster-\Exercise\src\assets\LandingPage.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+}
+
+.content-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.tagline {
+  color: #ff4d00;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.main-heading,
+.sub-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 100%;
+  margin: 1.5rem auto 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.6s forwards;
+  padding: 0 1rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.8s forwards;
+}
+
+.start-button,
+.demo-button {
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.start-button {
+  background-color: #ff4d00;
+  color: white;
+  border: none;
+}
+
+.demo-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  color: white;
+}
+
+@media screen and (min-width: 600px) {
+  .content-container {
+    padding: 2rem;
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .main-heading,
+  .sub-heading {
+    font-size: 3.5rem;
+  }
+
+  .description {
+    font-size: 1.125rem;
+    max-width: 80%;
+    margin: 2rem auto 3rem;
+  }
+
+  .button-container {
+    flex-direction: row;
+    max-width: 500px;
+    justify-content: center;
+  }
+
+  .start-button,
+  .demo-button {
+    width: auto;
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tagline {
+    font-size: 1.5rem;
+  }
+
+  .main-heading,
+  .sub-heading {
+    font-size: 4.5rem;
+  }
+
+  .description {
+    font-size: 1.25rem;
+    max-width: 700px;
+  }
+
+  .start-button,
+  .demo-button {
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .main-heading,
+  .sub-heading {
+    font-size: 5.5rem;
+  }
+
+  .description {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .content-container {
+    padding: 1rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-heading,
+  .sub-heading {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin: 1rem auto 1.5rem;
+  }
+
+  .button-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .start-button,
+  .demo-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+@supports (padding: max(0px)) {
+  .content-container {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+    padding-top: max(1rem, env(safe-area-inset-top));
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (hover: hover) {
+  .start-button:hover {
+    background-color: #ff6b2b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 77, 0, 0.3);
+  }
+
+  .demo-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tagline,
+  .main-heading,
+  .sub-heading,
+  .description,
+  .button-container {
+    animation: none;
+    opacity: 1;
+  }
+} */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+/* Base styles */
+.landing-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #0a0a0a;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+.background-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: url('C:\Users\am881\OneDrive\Documents\ProjectCopy\YogaMaster-\Exercise\src\assets\LandingPage.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.65;
+  filter: brightness(0.8) contrast(1.1);
+}
+
+.content-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Typography - Mobile First */
+.tagline {
+  color: #ff6b2b;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main-heading,
+.sub-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-heading {
+  animation: fadeInUp 0.8s ease 0.2s forwards;
+  margin-bottom: 0.5rem;
+}
+
+.sub-heading {
+  animation: fadeInUp 0.8s ease 0.4s forwards;
+  margin-bottom: 2.5rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.8;
+  max-width: 100%;
+  margin: 0 auto 3rem;
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.6s forwards;
+  padding: 0 1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 320px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 0.8s forwards;
+}
+
+/* Buttons */
+.start-button,
+.demo-button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.start-button {
+  background: linear-gradient(135deg, #ff6b2b 0%, #ff4d00 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 15px rgba(255, 107, 43, 0.3);
+}
+
+.demo-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border: 2.5px solid rgba(255, 255, 255, 0.9);
+  background-color: transparent;
+  color: white;
+  backdrop-filter: blur(4px);
+}
+
+/* Tablet Styles (768px and up) */
+@media screen and (min-width: 768px) {
+  .tagline {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .main-heading,
+  .sub-heading {
+    font-size: 4.5rem;
+  }
+
+  .description {
+    font-size: 1.25rem;
+    max-width: 80%;
+    margin-bottom: 3.5rem;
+  }
+
+  .button-container {
+    flex-direction: row;
+    max-width: 600px;
+    justify-content: center;
+  }
+
+  .start-button,
+  .demo-button {
+    width: auto;
+    padding: 1.25rem 2.5rem;
+  }
+}
+
+/* Desktop Styles (1280px and up) */
+@media screen and (min-width: 1280px) {
+  .tagline {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+  }
+
+  .main-heading,
+  .sub-heading {
+    font-size: 6rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+    max-width: 900px;
+    margin-bottom: 4rem;
+  }
+
+  .start-button,
+  .demo-button {
+    padding: 1.5rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+/* Button Hover Effects */
+@media (hover: hover) {
+  .start-button:hover {
+    background: linear-gradient(135deg, #ff7c45 0%, #ff6b2b 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 107, 43, 0.4);
+  }
+
+  .demo-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    border-color: white;
+  }
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Landscape Mode Optimization */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .content-container {
+    padding: 1rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-heading,
+  .sub-heading {
+    font-size: 2.75rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .button-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .start-button,
+  .demo-button {
+    padding: 0.875rem 1.75rem;
+    font-size: 1rem;
+  }
+}
