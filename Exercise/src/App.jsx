@@ -517,8 +517,6 @@ const MainContent = () => {
 
               <div className="hero-banner">
                 <img src={heroBanner} width="660" height="753" alt="hero banner" className="w-100" />
-                <img src={heroCircleOne} width="666" height="666" aria-hidden="true" alt=""
-                  className="circle circle-1" />
                 <img src={heroCircleTwo} width="666" height="666" aria-hidden="true" alt=""
                   className="circle circle-2" />
                 <img src={heartRate} width="255" height="270" alt="heart rate"
@@ -533,10 +531,6 @@ const MainContent = () => {
               <div className="about-banner has-after">
                 <img src={aboutBanner} width="660" height="648" loading="lazy" alt="about banner"
                   className="w-100" />
-                <img src={aboutCircleOne} width="660" height="534" loading="lazy" aria-hidden="true"
-                  alt="" className="circle circle-1" />
-                <img src={aboutCircleTwo} width="660" height="534" loading="lazy" aria-hidden="true"
-                  alt="" className="circle circle-2" />
                 <img src={fitness} width="650" height="154" loading="lazy" alt="fitness"
                   className="abs-img w-100" />
               </div>
